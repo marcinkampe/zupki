@@ -262,6 +262,70 @@ main {
   flex-basis: 100%;
 }
 
+.quiz {
+  width: 50vw;
+  box-shadow: 0px 0px 24px -9px rgb(66, 68, 90);
+  border-radius: 20px;
+  background-color: #f2b705;
+  color: #000000;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+}
+.quiz h2 {
+  grid-column: 1/span 4;
+  grid-row: 1;
+}
+.quiz form {
+  grid-column: 1/span 2;
+  grid-row: 2;
+}
+.quiz label {
+  background-color: #f2b705;
+  box-shadow: 1px 1px 1px 0px #0a0a0d;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px;
+  margin: 5px;
+}
+.quiz label:hover {
+  background-color: #ffd147;
+}
+.quiz input[type=button] {
+  background-color: #f2b705;
+  box-shadow: 1px 1px 1px 0px #0a0a0d;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: large;
+  margin-top: 30px;
+  padding: 10px;
+}
+.quiz input[type=button]:hover {
+  background-color: #ffd147;
+}
+.quiz input[type=radio] {
+  width: 15px;
+  height: 15px;
+}
+.quiz__wynik {
+  grid-column: 3/span 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr;
+  justify-content: center;
+}
+.quiz__wynik-zdj {
+  align-self: center;
+  justify-self: center;
+  grid-row: 2;
+  width: 256px;
+  height: 256px;
+  animation: rotate 5s linear infinite;
+}
+
 .float_l {
   float: left;
 }
