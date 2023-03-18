@@ -173,8 +173,16 @@ main {
   margin: 30px;
 }
 
-.band {
-  width: 20vw;
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.zupki {
+  width: 24vw;
   box-shadow: 0px 0px 24px -9px rgb(66, 68, 90);
   border-radius: 20px;
   display: flex;
@@ -185,29 +193,26 @@ main {
   color: #000000;
   transition: transform 0.3s;
 }
-.band:hover {
+.zupki:hover {
   transform: scale(1.1, 1.1);
 }
-.band img {
+.zupki img {
   display: flex;
   flex-basis: 100%;
   justify-content: flex-start;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  width: 50px;
-  height: 50px;
+  margin: 30px;
+  width: 10px;
   height: auto;
+  animation: rotate 5s linear infinite;
 }
-.band__name {
-  padding: 20px;
-  margin: 20px;
+.zupki__name {
   font-size: larger;
-  flex-basis: 100%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-weight: bold;
 }
-.band__desc {
+.zupki__desc {
   opacity: 0.8;
   padding: 10px;
   margin: 30px;
@@ -239,19 +244,6 @@ main {
   flex-basis: 100%;
   justify-content: center;
   opacity: 0.9;
-}
-
-.forum {
-  box-shadow: 0px 0px 24px -9px rgb(66, 68, 90);
-  padding: 100px;
-  border-radius: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #f2b705;
-  justify-content: center;
-  color: white;
-  font-weight: 900;
-  font-size: xx-large;
 }
 
 .space {
