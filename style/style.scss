@@ -18,6 +18,7 @@ body {
 }
 
 .nav {
+  background-color: $header_bg;
   display: flex;
   flex-basis: 100%;
   justify-content: space-evenly;
@@ -35,6 +36,8 @@ body {
       text-decoration: none;
       color: $secondary_font;
       padding: 15px;
+      width: 100%;
+      height: 100%;
     }
     &:hover {
       background-color: $header_hover;
@@ -45,17 +48,17 @@ body {
 .header {
   display: flex;
   flex-basis: 100%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   background-color: $header_bg;
   justify-content: flex-start;
   color: $secondary_font;
+  justify-content: center;
   &__logo {
-    position: absolute;
     align-self: flex-start;
     justify-self: flex-start;
 
     img {
-      width: 75px;
+      width: 50px;
       height: auto;
       transition: transform 0.3s;
       &:hover {
@@ -65,20 +68,23 @@ body {
   }
 
   h1 {
+    text-align: center;
     display: flex;
-    flex-basis: 100%;
-    justify-content: space-evenly;
-  }
-
-  &__subtitle {
-    color: $secondary_font;
-    font-size: large;
-    display: flex;
-    flex-basis: 100%;
     justify-content: center;
-    padding: 5px;
-    padding-bottom: 20px;
+    flex-basis: 90%;
+    margin-right: 50px;
   }
+}
+
+.subtitle {
+  background-color: $header_bg;
+  color: $secondary_font;
+  font-size: large;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  padding: 5px;
+  padding-bottom: 20px;
 }
 
 main {
