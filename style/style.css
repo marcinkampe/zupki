@@ -263,7 +263,7 @@ main {
 }
 
 .quiz {
-  width: 80vw;
+  width: 90%;
   box-shadow: 0px 0px 24px -9px rgb(66, 68, 90);
   border-radius: 20px;
   background-color: #f2b705;
