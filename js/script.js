@@ -70,7 +70,7 @@ function checkQuiz() {
     }
 
     document.getElementById("result").innerHTML =
-      "<p class = 'quiz__wynik-nazwa>' style= 'text-align: center; font-size: large; font-weight: bold;'>" +
+      "<p class = 'quiz__wynik-nazwa>' style= 'text-align: center; font-size: large; font-weight: bold; flex-basis: 100%; align-self: center; justify-self: center;'>" +
       result +
       "</p>" +
       "<img src=" +
