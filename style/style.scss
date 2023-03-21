@@ -154,8 +154,8 @@ main {
   img {
     display: flex;
     flex-basis: 100%;
-    max-height:100%;
-    height:auto;
+    max-height: 100%;
+    height: auto;
     max-width: 100%;
     width: auto;
 
@@ -178,7 +178,7 @@ main {
 }
 
 .article {
-  width: 80vw;
+  flex-basis: 100%;
 
   box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
 
@@ -212,6 +212,26 @@ main {
   }
 }
 
+.float_l {
+  float: left;
+  display: flex;
+  flex-basis: 100%;
+  max-height: 100%;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+.float_r {
+  float: right;
+  display: flex;
+  flex-basis: 100%;
+  max-height: 100%;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -222,7 +242,7 @@ main {
 }
 
 .zupki {
-  width: 24vw;
+  flex-basis: 30%;
 
   box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
 
@@ -373,12 +393,4 @@ main {
       animation: rotate 5s linear infinite;
     }
   }
-}
-
-.float_l {
-  float: left;
-}
-
-.float_r {
-  float: right;
 }
