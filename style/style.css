@@ -185,15 +185,6 @@ main {
   margin: 30px;
 }
 
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -226,8 +217,7 @@ main {
   margin: 30px;
   width: 10px;
   height: auto;
-  -webkit-animation: rotate 5s linear infinite;
-          animation: rotate 5s linear infinite;
+  animation: rotate 5s linear infinite;
 }
 .zupki__name {
   font-size: larger;
@@ -345,8 +335,7 @@ main {
   grid-row: 2;
   width: 256px;
   height: 256px;
-  -webkit-animation: rotate 5s linear infinite;
-          animation: rotate 5s linear infinite;
+  animation: rotate 5s linear infinite;
 }
 
 .float_l {
