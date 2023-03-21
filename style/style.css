@@ -118,7 +118,7 @@ main {
 }
 
 .preview {
-  width: 400px;
+  flex-basis: 30%;
   height: auto;
   box-shadow: 0px 0px 24px -9px rgb(66, 68, 90);
   border-radius: 20px;
@@ -136,8 +136,10 @@ main {
 .preview img {
   display: flex;
   flex-basis: 100%;
-  width: 400px;
-  height: 400px;
+  max-height: 100%;
+  height: auto;
+  max-width: 100%;
+  width: auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -183,6 +185,15 @@ main {
   margin: 30px;
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -215,7 +226,8 @@ main {
   margin: 30px;
   width: 10px;
   height: auto;
-  animation: rotate 5s linear infinite;
+  -webkit-animation: rotate 5s linear infinite;
+          animation: rotate 5s linear infinite;
 }
 .zupki__name {
   font-size: larger;
@@ -333,7 +345,8 @@ main {
   grid-row: 2;
   width: 256px;
   height: 256px;
-  animation: rotate 5s linear infinite;
+  -webkit-animation: rotate 5s linear infinite;
+          animation: rotate 5s linear infinite;
 }
 
 .float_l {
