@@ -240,6 +240,7 @@ main {
   color: #000000;
   text-decoration: none;
   transition: transform 0.3s;
+  overflow: hidden;
 }
 .zupki:hover {
   transform: scale(1.1, 1.1);
