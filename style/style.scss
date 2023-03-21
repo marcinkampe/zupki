@@ -256,7 +256,12 @@ main {
 }
 
 .zupki {
-  flex-basis: 30%;
+  height: auto;
+  flex-basis: 25%;
+
+  max-height: 100%;
+  height: auto;
+  min-width: 300px;
 
   box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
 
@@ -265,8 +270,9 @@ main {
   flex-wrap: wrap;
   background-color: $article_bg;
   justify-content: center;
-  row-gap: 0px;
   color: $main_font;
+  text-decoration: none;
+
   transition: transform 0.3s;
 
   &:hover {
