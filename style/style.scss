@@ -185,7 +185,7 @@ main {
 }
 
 .article {
-  flex-basis: 100%;
+  flex-basis: 95%;
 
   box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
 
@@ -197,6 +197,7 @@ main {
   color: $main_font;
 
   &__title {
+    text-align: center;
     padding: 20px;
     margin: 20px;
     font-size: xx-large;
@@ -207,12 +208,14 @@ main {
   }
 
   &__subtitle {
+    text-align: center;
     font-size: x-large;
     padding: 0px;
     margin: 0px;
   }
 
   &__text {
+    text-align: left;
     font-size: large;
     padding: 10px;
     margin: 30px;
