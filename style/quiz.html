@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Strona główna</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+            </div>
+            <h1>Witam na mojej stronie</h1>
+        </div>
+        <div class="subtitle">Wszytko o zupkach chińskich</div>
+        <div class="nav">
+            <ul>
+                <li onclick="location.href='index.html';" style="cursor:pointer;"><a href="index.html">Artykuły</a></li>
+                <li onclick="location.href='zupki.html';" style="cursor:pointer;"><a href="zupki.html">Zupki</a></li>
+                <li onclick="location.href='quiz.html';" style="cursor:pointer;"><a href="quiz.html">Quiz</a></li>
+                <li onclick="location.href='about.html';" style="cursor:pointer;"><a href="about.html">O mnie</a></li>
+            </ul>
+        </div>
+        <div class="space--qu"></div>
+        <main>
+            <div class="quiz">
+
+                <h2>Jaka zupka jest najlepsza dla ciebie?</h2>
+                <form name="jaka_zupka">
+                    <h3>Pytanie 1:</h3>
+                    <p>Wolisz kuchnię polską czy azjatycką?</p>
+                    <label>
+                        <input type="radio" name="q1" value="polska">
+                        Polska
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="azjatycka">
+                        Azjatycka
+                    </label>
+                    <h3>Pytanie 2:</h3>
+                    <p>Wolisz opcje pikantne czy łagodne?</p>
+                    <label>
+                        <input type="radio" name="q2" value="ostra">
+                        Pikantne
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="lagodna">
+                        Łagodne
+                    </label>
+                    <h3>Pytanie 3:</h3>
+                    <p>Wolisz opcje wegańskie czy mięsne?</p>
+                    <label>
+                        <input type="radio" name="q3" value="weganskia">
+                        Wegańskie
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="miesna">
+                        Mięsne
+                    </label>
+                    <br><br>
+                    <input type="button" value="Sprawdź wynik" onclick="checkQuiz()">
+                </form>
+                <div id="result" class="quiz__wynik"></div>
+
+            </div>
+        </main>
+
+        <div class="footer">
+            <div class="footer__subtitle">Strona stworzona przez:</div>
+            <div class="footer__autor">&copy; Julia Skwarkowska 2023 All rights reserved.</div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
